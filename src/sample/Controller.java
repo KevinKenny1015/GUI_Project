@@ -35,7 +35,8 @@ public class Controller {
     private TextField Manu_user_input;
 
 
-    @FXML private TableColumn<String, Product> productType;
+    @FXML
+    private TableColumn<String, Product> productType;
 
     @FXML
     private ListView<Product> prod_list_view;
@@ -70,13 +71,13 @@ public class Controller {
     private ObservableList<Product> productLine;
 
     @FXML
-    public void initialize(){
+    public void initialize() {
 
     }
 
     @FXML
     void Add_Product(ActionEvent event) {
-    System.out.println("Add_Product");
+        System.out.println("Add_Product");
 
         final String JDBC_DRIVER = "org.h2.Driver";
         final String DB_URL = "jdbc:h2:./res/GUI_db";
@@ -100,7 +101,7 @@ public class Controller {
             String type_from_user = "AUDIO";
             String man_user = Manu_user_input.getText();
             String device_name = Prodname_user_input.getText();
-            String sql = "INSERT INTO Product(type, manufacturer, name) VALUES ( '"+type_from_user+"', '"+man_user+"', '"+device_name+"' );";
+            String sql = "INSERT INTO Product(type, manufacturer, name) VALUES ( '" + type_from_user + "', '" + man_user + "', '" + device_name + "' );";
 
             stmt.executeUpdate(sql);
 
@@ -128,7 +129,6 @@ public class Controller {
     }
 
     /**
-     *
      * @throws SQLException
      */
     @FXML
@@ -139,15 +139,15 @@ public class Controller {
         ArrayList<ProductionRecord> pr = new ArrayList();
 //        for (int productionRunProduct = 0; productionRunProduct < numProduced; productionRunProduct++) {
 //            ProductionRecord prodRecord = new ProductionRecord(prodProduced, productionRunProduct);
-        }
+    }
 
     /**
      * Initializes ComboBox and add number 1-10
      */
     @FXML
-    private void initializingComboBox(){
-        ObservableList<String > data = FXCollections.observableArrayList();
-        for(int i =1; i<=10; i++) {
+    private void initializingComboBox() {
+        ObservableList<String> data = FXCollections.observableArrayList();
+        for (int i = 1; i <= 10; i++) {
             data.add(Integer.toString(i));
             Choose_Quant.setEditable(true);
             Choose_Quant.getSelectionModel().selectFirst();
@@ -157,7 +157,6 @@ public class Controller {
     }
 
     /**
-     *
      * @param event
      */
     @FXML

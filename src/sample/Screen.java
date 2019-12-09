@@ -11,8 +11,9 @@ public class Screen implements ScreenSpec {
 
     /**
      * Constructor for Screen
-     * @param resolution String value
-     * @param refreshrate int value
+     *
+     * @param resolution   String value
+     * @param refreshrate  int value
      * @param responsetime int value
      */
     public Screen(String resolution, int refreshrate, int responsetime) {
@@ -23,6 +24,7 @@ public class Screen implements ScreenSpec {
 
     /**
      * getter for resolution of screen
+     *
      * @return String resolution
      */
     public String getResolution() {
@@ -31,6 +33,7 @@ public class Screen implements ScreenSpec {
 
     /**
      * setter for resolution
+     *
      * @param resolution String
      */
     public void setResolution(String resolution) {
@@ -39,6 +42,7 @@ public class Screen implements ScreenSpec {
 
     /**
      * getter for refreshRate
+     *
      * @return int refreshRate
      */
     public int getRefreshRate() {
@@ -47,6 +51,7 @@ public class Screen implements ScreenSpec {
 
     /**
      * setter for refreshRate
+     *
      * @param refreshRate int
      */
     public void setRefreshRate(int refreshRate) {
@@ -55,6 +60,7 @@ public class Screen implements ScreenSpec {
 
     /**
      * getter for responseTime
+     *
      * @return int responseTime
      */
     public int getResponseTime() {
@@ -63,6 +69,7 @@ public class Screen implements ScreenSpec {
 
     /**
      * setter for responseTime
+     *
      * @param responseTime int
      */
     public void setResponseTime(int responseTime) {
@@ -71,6 +78,7 @@ public class Screen implements ScreenSpec {
 
     /**
      * String format
+     *
      * @return String resolution, int refreshRate, int responseTime in correct format
      */
     public String toString() {

@@ -16,7 +16,8 @@ public enum ItemType {
     public String productType;
 
     /**
-     *  ItemType Constructor
+     * ItemType Constructor
+     *
      * @param productType
      */
     ItemType(String productType) {
@@ -25,6 +26,7 @@ public enum ItemType {
 
     /**
      * Receives code
+     *
      * @return
      */
     public String getProductType() {
@@ -34,6 +36,7 @@ public enum ItemType {
 
     /**
      * Sets code
+     *
      * @return
      */
     public String setProductType() {

@@ -2,7 +2,7 @@ package sample;
 
 /**
  * @author Kevin
- *
+ * <p>
  * AudioPlayer extends Product implements MultimediaControl
  */
 public class AudioPlayer extends Product implements MultimediaControl {
@@ -10,10 +10,9 @@ public class AudioPlayer extends Product implements MultimediaControl {
     String mediaType;
 
     /**
-     *
-     * @param name String
-     * @param manufacturer String
-     * @param mediaType String
+     * @param name               String
+     * @param manufacturer       String
+     * @param mediaType          String
      * @param audioSpecification String
      */
     public AudioPlayer(
@@ -59,6 +58,7 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
     /**
      * format String
+     *
      * @return String
      */
     public String toString() {

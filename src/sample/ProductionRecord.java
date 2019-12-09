@@ -15,8 +15,9 @@ public class ProductionRecord {
 
     /**
      * Class constructor
+     *
      * @param prodID int prodID
-     * */
+     */
     public ProductionRecord(int prodID) {
         this.prodID = prodID;
         this.prodNumber = 0;
@@ -26,11 +27,12 @@ public class ProductionRecord {
 
     /**
      * Class constructor
-     * @param prodNumber int number
+     *
+     * @param prodNumber  int number
      * @param productName String name
-     * @param serialNum String serialNum
-     * @param prodDate Date
-     * */
+     * @param serialNum   String serialNum
+     * @param prodDate    Date
+     */
     public ProductionRecord(int prodNumber, String productName, String serialNum, Date prodDate) {
         this.prodNumber = prodNumber;
         this.prodName = productName;
@@ -40,9 +42,10 @@ public class ProductionRecord {
 
     /**
      * Class construtor
+     *
      * @param product object is passed as an argument
-     * @param count integer value passed as argument
-     * */
+     * @param count   integer value passed as argument
+     */
     public ProductionRecord(Product product, int count) {
         String IDNumber = String.format("%05d", count);
         this.serialNum = product.getManufacturer().substring(0, 3) + product.getItemType() + IDNumber;
@@ -52,14 +55,16 @@ public class ProductionRecord {
 
     /**
      * getter for ProdName
+     *
      * @return string
      */
-    public String getProdName(){
+    public String getProdName() {
         return prodName;
     }
 
     /**
      * getter for ProdNumber
+     *
      * @return int
      */
     public int getProdNumber() {
@@ -68,6 +73,7 @@ public class ProductionRecord {
 
     /**
      * geter for ProdID
+     *
      * @return int
      */
     public int getProdID() {
@@ -76,6 +82,7 @@ public class ProductionRecord {
 
     /**
      * getter for serialNum
+     *
      * @return string
      */
     public String getSerialNum() {
@@ -84,6 +91,7 @@ public class ProductionRecord {
 
     /**
      * getter for prodDate
+     *
      * @return date of prodDate
      */
     public Date getProdDate() {
@@ -94,14 +102,16 @@ public class ProductionRecord {
 
     /**
      * setter for prodName
+     *
      * @param prodName string
      */
-    public void setProdName(String prodName){
+    public void setProdName(String prodName) {
         this.prodName = prodName;
     }
 
     /**
      * setter for prodNumber
+     *
      * @param prodNumber int
      */
     public void setProdNumber(int prodNumber) {
@@ -110,6 +120,7 @@ public class ProductionRecord {
 
     /**
      * setter for prodID
+     *
      * @param prodID int
      */
     public void setProdID(int prodID) {
@@ -118,6 +129,7 @@ public class ProductionRecord {
 
     /**
      * setter for serialNum
+     *
      * @param serialNumber Sting
      */
     public void setSerialNum(String serialNumber) {
@@ -126,6 +138,7 @@ public class ProductionRecord {
 
     /**
      * setter for prodDate
+     *
      * @param prodDate date for prodDate
      */
     public void setProdDate(Date prodDate) {
@@ -134,6 +147,7 @@ public class ProductionRecord {
 
     /**
      * Method to format the String toString
+     *
      * @return formatted String
      */
     @Override
