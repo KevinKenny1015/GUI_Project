@@ -20,9 +20,9 @@
   <tabs>
     <Tab text="Product Line">
       <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="593.0">
                <children>
-                  <GridPane layoutX="157.0" layoutY="32.0" prefHeight="279.0" prefWidth="378.0">
+                  <GridPane layoutX="157.0" layoutY="32.0" prefHeight="130.0" prefWidth="335.0">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -43,10 +43,12 @@
                   </GridPane>
                   <Button fx:id="btn_Add_Product" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Add_Product" text="Add Product" />
                   <Label layoutX="32.0" layoutY="87.0" text="Products" />
-                  <TableView layoutX="6.0" layoutY="104.0" prefHeight="213.0" prefWidth="109.0">
+                  <TableView fx:id="prod_tableview" layoutX="26.0" layoutY="246.0" prefHeight="111.0" prefWidth="548.0">
                     <columns>
-                      <TableColumn prefWidth="75.0" text="C1" />
-                      <TableColumn prefWidth="75.0" text="C2" />
+                      <TableColumn fx:id="ProdID" prefWidth="75.0" text="Product ID" />
+                      <TableColumn fx:id="ProdName" prefWidth="75.0" text="Product Name" />
+                        <TableColumn fx:id="listtype" prefWidth="75.0" text="Type" />
+                        <TableColumn fx:id="listman" prefWidth="75.0" text="Manufacters" />
                     </columns>
                   </TableView>
                </children></AnchorPane>
@@ -57,9 +59,9 @@
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
                   <Label layoutX="258.0" layoutY="31.0" text="Choose Product" />
-                  <ListView layoutX="200.0" layoutY="48.0" prefHeight="200.0" prefWidth="200.0" />
+                  <ListView fx:id="prod_list_view" layoutX="200.0" layoutY="48.0" prefHeight="200.0" prefWidth="200.0" />
                   <Label layoutX="464.0" layoutY="31.0" text="Choose Quantity" />
-                  <ComboBox layoutX="433.0" layoutY="55.0" prefWidth="150.0" />
+                  <ComboBox fx:id="Choose_Quant" layoutX="433.0" layoutY="55.0" prefWidth="150.0" />
                   <Button fx:id="btn_Record_Production" layoutX="42.0" layoutY="27.0" mnemonicParsing="false" onAction="#Record_Production" text="Record Production" />
                </children></AnchorPane>
       </content>
@@ -68,7 +70,7 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <TextArea layoutX="26.0" layoutY="25.0" prefHeight="200.0" prefWidth="200.0" />
+                  <TextArea fx:id="Prod_log" layoutX="26.0" layoutY="25.0" prefHeight="200.0" prefWidth="200.0" />
                </children>
             </AnchorPane>
         </content>
