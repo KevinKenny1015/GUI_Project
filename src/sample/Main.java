@@ -14,7 +14,7 @@ public class Main extends Application {
 
     /**
      *
-     * @param primaryStage user sees this first.
+     * @param primaryStage user sees this stage first.
      * @throws Exception tells compiler that something that cant be accepted is happening.
      */
     @Override
