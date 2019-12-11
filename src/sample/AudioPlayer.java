@@ -6,64 +6,66 @@ package sample;
  * AudioPlayer extends Product implements MultimediaControl
  */
 public class AudioPlayer extends Product implements MultimediaControl {
-    String audioSpecification;
-    String mediaType;
 
-    /**
-     * @param name               String
-     * @param manufacturer       String
-     * @param mediaType          String
-     * @param audioSpecification String
-     */
-    public AudioPlayer(
-            String name, String manufacturer, String mediaType, String audioSpecification) {
+  String audioSpecification;
+  String mediaType;
 
-        super(name, manufacturer, ItemType.AUDIO);
+  /**
+   * @param name               String
+   * @param manufacturer       String
+   * @param mediaType          String
+   * @param audioSpecification String
+   */
+  public AudioPlayer(
+      String name, String manufacturer, String mediaType,
+      String audioSpecification) {
 
-        this.audioSpecification = audioSpecification;
-        this.mediaType = mediaType;
-    } // constructor
+    super(name, manufacturer, ItemType.AUDIO);
 
-    public String getAudioSpecification() {
-        return this.audioSpecification;
-    } // getaudioSpecification
+    this.audioSpecification = audioSpecification;
+    this.mediaType = mediaType;
+  } // constructor
 
-    public String getMediaType() {
-        return this.mediaType;
-    } // getmediaType
+  public String getAudioSpecification() {
+    return this.audioSpecification;
+  } // getaudioSpecification
 
-    public void setAudioSpecification(String audioSpecification) {
-        this.audioSpecification = audioSpecification;
-    } // setsudioSpecification
+  public String getMediaType() {
+    return this.mediaType;
+  } // getmediaType
 
-    public void setMediaType(String mediaType) {
-        this.mediaType = mediaType;
-    } // setmediaType
+  public void setAudioSpecification(String audioSpecification) {
+    this.audioSpecification = audioSpecification;
+  } // setsudioSpecification
 
-    public void play() {
-        System.out.println("Playing");
-    }
+  public void setMediaType(String mediaType) {
+    this.mediaType = mediaType;
+  } // setmediaType
 
-    public void stop() {
-        System.out.println("Stopping");
-    }
+  public void play() {
+    System.out.println("Playing");
+  }
 
-    public void previous() {
-        System.out.println("Previous");
-    }
+  public void stop() {
+    System.out.println("Stopping");
+  }
 
-    public void next() {
-        System.out.println("Next");
-    }
+  public void previous() {
+    System.out.println("Previous");
+  }
 
-    /**
-     * format String
-     *
-     * @return String
-     */
-    public String toString() {
-        return String.format(
-                "%s\nSupported Audio Formats: %s\nSupported Playlist Formats: %s",
-                super.toString(), this.mediaType, this.audioSpecification);
-    }
+  public void next() {
+    System.out.println("Next");
+  }
+
+  /**
+   * format String
+   *
+   * @return String
+   */
+  public String toString() {
+    return String.format(
+        "%s\nSupported Audio Formats: %s\nSupported Playlist Formats: %s",
+        super.toString(), this.mediaType, this.audioSpecification);
+  }
 } // class

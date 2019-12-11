@@ -1,46 +1,45 @@
 package sample;
 
 /**
- * @author Kevin
- * holds ItemType
+ * @author Kevin holds ItemType
  */
 public enum ItemType {
-    AUDIO("AU"),
+  AUDIO("AU"),
 
-    VISUAL("VI"),
+  VISUAL("VI"),
 
-    AUDIO_MOBILE("AM"),
+  AUDIO_MOBILE("AM"),
 
-    VISUAL_MOBILE("VM");
+  VISUAL_MOBILE("VM");
 
-    public String productType;
+  public String productType;
 
-    /**
-     * ItemType Constructor
-     *
-     * @param productType
-     */
-    ItemType(String productType) {
-        this.productType = productType;
-    }
+  /**
+   * ItemType Constructor
+   *
+   * @param productType
+   */
+  ItemType(String productType) {
+    this.productType = productType;
+  }
 
-    /**
-     * Receives code
-     *
-     * @return
-     */
-    public String getProductType() {
+  /**
+   * Receives code
+   *
+   * @return
+   */
+  public String getProductType() {
 
-        return productType;
-    }
+    return productType;
+  }
 
-    /**
-     * Sets code
-     *
-     * @return
-     */
-    public String setProductType() {
-        return productType;
-    }
+  /**
+   * Sets code
+   *
+   * @return
+   */
+  public String setProductType() {
+    return productType;
+  }
 }
 

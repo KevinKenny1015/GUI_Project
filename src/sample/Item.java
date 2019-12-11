@@ -1,18 +1,17 @@
 package sample;
 
 /**
- * @author Kevin
- * Accessor and mutator of Item
+ * @author Kevin Accessor and mutator of Item
  */
 public interface Item {
 
-    public int getId();
+  public int getId();
 
-    public void setName(String name);
+  public void setName(String name);
 
-    public String getName();
+  public String getName();
 
-    public void setManufacturer(String manufacturer);
+  public void setManufacturer(String manufacturer);
 
-    public String getManufacturer();
+  public String getManufacturer();
 }
