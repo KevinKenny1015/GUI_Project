@@ -155,3 +155,6 @@ Show all Products in the Produce tab ListView.
 
 Use the selected item from the ListView as the item used to record production.
 Show the production log in the Production Log tab TextArea. 
+
+
+Sprint 3 Coming Soon...
