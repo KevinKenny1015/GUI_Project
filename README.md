@@ -2,6 +2,7 @@
 
 
 
+
 # GUI_Project
 GUI Project
 Kevin Kenny 
@@ -162,3 +163,5 @@ Show the production log in the Production Log tab TextArea.
 
 
 Sprint 3 Coming Soon...
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/43714418/70740965-56a70c00-1ce8-11ea-92cc-6c4bbec1777f.gif)
