@@ -1,9 +1,12 @@
 package sample;
 
 /**
+ * AudioPlayer extends Product implements MultimediaControl.
  * @author Kevin
  * <p>
- * AudioPlayer extends Product implements MultimediaControl
+ *
+ * </p>
+ *
  */
 public class AudioPlayer extends Product implements MultimediaControl {
 
@@ -11,6 +14,7 @@ public class AudioPlayer extends Product implements MultimediaControl {
   String mediaType;
 
   /**
+   * sets types for AudioPlayer.
    * @param name               String
    * @param manufacturer       String
    * @param mediaType          String
@@ -59,13 +63,13 @@ public class AudioPlayer extends Product implements MultimediaControl {
   }
 
   /**
-   * format String
+   * format String.
    *
    * @return String
    */
   public String toString() {
     return String.format(
-        "%s\nSupported Audio Formats: %s\nSupported Playlist Formats: %s",
+        "%s%nSupported Audio Formats: %s%nSupported Playlist Formats: %s",
         super.toString(), this.mediaType, this.audioSpecification);
   }
 } // class

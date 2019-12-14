@@ -3,6 +3,8 @@ package sample;
 import java.util.Date;
 
 /**
+ * set types for class ProductionRecord.
+ *
  * @author Kevin class ProductionRecord stores data in database
  */
 public class ProductionRecord {
@@ -14,7 +16,7 @@ public class ProductionRecord {
   String prodName;
 
   /**
-   * Class constructor
+   * Class constructor.
    *
    * @param prodID int prodID
    */
@@ -26,7 +28,7 @@ public class ProductionRecord {
   }
 
   /**
-   * Class constructor
+   * Class constructor.
    *
    * @param prodNumber  int number
    * @param productName String name
@@ -42,105 +44,114 @@ public class ProductionRecord {
   }
 
   /**
-   * Class construtor
+   * Class constructor.
    *
    * @param product object is passed as an argument
    * @param count   integer value passed as argument
    */
   public ProductionRecord(Product product, int count) {
-    String IDNumber = String.format("%05d", count);
+    String idnumber = String.format("%05d", count);
     this.serialNum =
         product.getManufacturer().substring(0, 3) + product.getItemType()
-            + IDNumber;
+            + idnumber;
     this.prodName = product.getName();
     this.prodDate = new Date();
   }
 
   /**
-   * getter for ProdName
+   * getter for ProdName.
    *
    * @return string
    */
-  public String getProdName() {
+  public String ProdName() {
+
     return prodName;
   }
 
   /**
-   * getter for ProdNumber
+   * getter for ProdNumber.
    *
    * @return int
    */
   public int getProdNumber() {
+
     return prodNumber;
   }
 
   /**
-   * geter for ProdID
+   * geter for ProdID.
    *
    * @return int
    */
   public int getProdID() {
+
     return prodID;
   }
 
   /**
-   * getter for serialNum
+   * getter for serialNum.
    *
    * @return string
    */
   public String getSerialNum() {
+
     return serialNum;
   }
 
   /**
-   * getter for prodDate
+   * getter for prodDate.
    *
    * @return date of prodDate
    */
   public Date getProdDate() {
+
     return prodDate;
   }
 
   // Setters
 
   /**
-   * setter for prodName
+   * setter for prodName.
    *
    * @param prodName string
    */
   public void setProdName(String prodName) {
+
     this.prodName = prodName;
   }
 
   /**
-   * setter for prodNumber
+   * setter for prodNumber.
    *
    * @param prodNumber int
    */
   public void setProdNumber(int prodNumber) {
+
     this.prodNumber = prodNumber;
   }
 
   /**
-   * setter for prodID
+   * setter for prodID.
    *
    * @param prodID int
    */
   public void setProdID(int prodID) {
+
     this.prodID = prodID;
   }
 
   /**
-   * setter for serialNum
+   * setter for serialNum.
    *
    * @param serialNumber Sting
    */
   public void setSerialNum(String serialNumber) {
+
     this.serialNum = serialNum;
   }
 
   /**
-   * setter for prodDate
+   * setter for prodDate.
    *
    * @param prodDate date for prodDate
    */
@@ -149,7 +160,7 @@ public class ProductionRecord {
   }
 
   /**
-   * Method to format the String toString
+   * Method to format the String toString.
    *
    * @return formatted String
    */

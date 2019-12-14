@@ -1,7 +1,8 @@
 package sample;
 
 /**
- * @author Kevin interface MultimediaControl
+ * interface MultimediaControl.
+ * @author Kevin
  */
 public interface MultimediaControl {
 

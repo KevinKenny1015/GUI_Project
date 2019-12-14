@@ -1,6 +1,8 @@
 package sample;
 
 /**
+ * Screen implements ScreenSpec.
+ *
  * @author Kevin class Screen implements ScreenSpec
  */
 public class Screen implements ScreenSpec {
@@ -10,7 +12,7 @@ public class Screen implements ScreenSpec {
   private int responseTime;
 
   /**
-   * Constructor for Screen
+   * Constructor for Screen.
    *
    * @param resolution   String value
    * @param refreshrate  int value
@@ -23,7 +25,7 @@ public class Screen implements ScreenSpec {
   }
 
   /**
-   * getter for resolution of screen
+   * getter for resolution of screen.
    *
    * @return String resolution
    */
@@ -32,7 +34,7 @@ public class Screen implements ScreenSpec {
   }
 
   /**
-   * setter for resolution
+   * setter for resolution.
    *
    * @param resolution String
    */
@@ -41,7 +43,7 @@ public class Screen implements ScreenSpec {
   }
 
   /**
-   * getter for refreshRate
+   * getter for refreshRate.
    *
    * @return int refreshRate
    */
@@ -50,7 +52,7 @@ public class Screen implements ScreenSpec {
   }
 
   /**
-   * setter for refreshRate
+   * setter for refreshRate.
    *
    * @param refreshRate int
    */
@@ -59,7 +61,7 @@ public class Screen implements ScreenSpec {
   }
 
   /**
-   * getter for responseTime
+   * getter for responseTime.
    *
    * @return int responseTime
    */
@@ -68,7 +70,7 @@ public class Screen implements ScreenSpec {
   }
 
   /**
-   * setter for responseTime
+   * setter for responseTime.
    *
    * @param responseTime int
    */
@@ -77,14 +79,14 @@ public class Screen implements ScreenSpec {
   }
 
   /**
-   * String format
+   * String format.
    *
    * @return String resolution, int refreshRate, int responseTime in correct
-   * format
+   * format.
    */
   public String toString() {
     return String.format(
-        "\nResolution: %s\nRefresh rate: %d\nResponse time: %d",
+        "%nResolution: %s%nRefresh rate: %d%nResponse time: %d",
         this.resolution, this.refreshRate, this.responseTime);
   }
 }

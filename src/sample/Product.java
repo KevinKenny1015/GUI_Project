@@ -5,7 +5,7 @@ package sample;
  */
 
 /**
- * abstract class Product implements interface Item
+ * abstract class Product implements interface Item.
  */
 public abstract class Product implements Item {
 
@@ -16,6 +16,8 @@ public abstract class Product implements Item {
   private ItemType itemType;
 
   /**
+   * Creted type for Product.
+   *
    * @param name         pass a string
    * @param manufacturer pass a string
    * @param itemType     send ItemType or Product
@@ -28,7 +30,7 @@ public abstract class Product implements Item {
   }
 
   /**
-   * getter for ItemType
+   * getter for ItemType.
    *
    * @return
    */
@@ -37,16 +39,16 @@ public abstract class Product implements Item {
   }
 
   /**
-   * setter for the type of item for ItemType
+   * setter for the type of item for ItemType.
    *
-   * @param itemType
+   * @param itemType set ItemType
    */
   public void setItemType(ItemType itemType) {
     this.itemType = itemType;
   }
 
   /**
-   * getter for id
+   * getter for id.
    *
    * @return return int
    */
@@ -55,7 +57,7 @@ public abstract class Product implements Item {
   }
 
   /**
-   * setter for id
+   * setter for id.
    *
    * @param id sends int to id
    */
@@ -64,7 +66,7 @@ public abstract class Product implements Item {
   }
 
   /**
-   * getter for string name
+   * getter for string name.
    *
    * @return return String
    */
@@ -74,7 +76,7 @@ public abstract class Product implements Item {
   }
 
   /**
-   * setter for name
+   * setter for name.
    *
    * @param name is passed as argument
    */
@@ -83,7 +85,7 @@ public abstract class Product implements Item {
   }
 
   /**
-   * setter for manufacturer
+   * setter for manufacturer.
    *
    * @param manufacturer passes sting as argument
    */
@@ -92,7 +94,7 @@ public abstract class Product implements Item {
   }
 
   /**
-   * getter for manufacturer
+   * getter for manufacturer.
    *
    * @return String
    */
@@ -101,7 +103,7 @@ public abstract class Product implements Item {
   }
 
   /**
-   * getter for ItemType
+   * getter for ItemType.
    *
    * @return object ItemType
    */
@@ -110,7 +112,7 @@ public abstract class Product implements Item {
   }
 
   /**
-   * setter for ItemType
+   * setter for ItemType.
    *
    * @param type passes value for ItemType
    */
@@ -119,26 +121,17 @@ public abstract class Product implements Item {
   }
 
   /**
-   * used for formatting the toString Method
+   * used for formatting the toString Method.
    *
    * @return return a String
    */
   @Override
   public String toString() {
     String str =
-        String.format("Name: %s\nManufacturer: %s\ntype: %s", this.name,
+        String.format("Name: %s%nManufacturer: %s%ntype: %s", this.name,
             this.manufacturer, this.itemType);
     return str;
   }
 }
 
-/**
- * class Widget extends to the abstract class Product
- */
-class Widget extends Product {
-
-  Widget(String name, String manufacturer, ItemType type) {
-    super(name, manufacturer, type);
-  }
-}
 

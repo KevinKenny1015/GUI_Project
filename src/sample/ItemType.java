@@ -15,16 +15,16 @@ public enum ItemType {
   public String productType;
 
   /**
-   * ItemType Constructor
+   * ItemType Constructor.
    *
-   * @param productType
+   * @param productType created
    */
   ItemType(String productType) {
     this.productType = productType;
   }
 
   /**
-   * Receives code
+   * Receives code.
    *
    * @return
    */
@@ -34,7 +34,7 @@ public enum ItemType {
   }
 
   /**
-   * Sets code
+   * Sets code.
    *
    * @return
    */

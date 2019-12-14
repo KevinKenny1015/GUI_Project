@@ -7,14 +7,15 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- * @author Kevin
- * @brief implements software that will make it easy to keep track of products
- * being produced.
+ * implements software that will make it easy to keep track of products.
+ *
+ * @author Kevin being produced.
  */
 public class Main extends Application {
 
 
   /**
+   * First Stage.
    * @param primaryStage user sees this stage first.
    * @throws Exception tells compiler that something that cant be accepted is
    *                   happening.

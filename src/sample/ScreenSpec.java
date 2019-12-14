@@ -1,6 +1,8 @@
 package sample;
 
 /**
+ * Interface for ScreenSpec.
+ *
  * @author Kevin
  */
 public interface ScreenSpec {

@@ -34,19 +34,19 @@
                     </rowConstraints>
                      <children>
                         <Label text="Product Name" />
-                        <TextField fx:id="Prodname_user_input" GridPane.columnIndex="1" />
+                        <TextField fx:id="prodnameUserInput" GridPane.columnIndex="1" />
                         <Label text="Manufacturer" GridPane.rowIndex="1" />
                         <Label text="Item Type" GridPane.rowIndex="2" />
-                        <TextField fx:id="Manu_user_input" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <ChoiceBox fx:id="drop_down_type" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="manuUserInput" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <ChoiceBox fx:id="dropDownType" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                      </children>
                   </GridPane>
-                  <Button fx:id="btn_Add_Product" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Add_Product" text="Add Product" />
+                  <Button fx:id="btnAddProduct" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#addProduct" text="Add Product" />
                   <Label layoutX="32.0" layoutY="87.0" text="Products" />
-                  <TableView fx:id="prod_tableview" layoutX="26.0" layoutY="246.0" prefHeight="111.0" prefWidth="548.0">
+                  <TableView fx:id="prodTableview" layoutX="26.0" layoutY="246.0" prefHeight="111.0" prefWidth="548.0">
                     <columns>
-                      <TableColumn fx:id="ProdID" prefWidth="75.0" text="Product ID" />
-                      <TableColumn fx:id="ProdName" prefWidth="75.0" text="Product Name" />
+                      <TableColumn fx:id="prodID" prefWidth="75.0" text="Product ID" />
+                      <TableColumn fx:id="prodName" prefWidth="75.0" text="Product Name" />
                         <TableColumn fx:id="listtype" prefWidth="75.0" text="Type" />
                         <TableColumn fx:id="listman" prefWidth="75.0" text="Manufacters" />
                     </columns>
@@ -59,10 +59,10 @@
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
                   <Label layoutX="258.0" layoutY="31.0" text="Choose Product" />
-                  <ListView fx:id="prod_list_view" layoutX="200.0" layoutY="48.0" prefHeight="200.0" prefWidth="200.0" />
+                  <ListView fx:id="prodListView" layoutX="200.0" layoutY="48.0" prefHeight="200.0" prefWidth="200.0" />
                   <Label layoutX="464.0" layoutY="31.0" text="Choose Quantity" />
-                  <ComboBox fx:id="Choose_Quant" layoutX="433.0" layoutY="55.0" prefWidth="150.0" />
-                  <Button fx:id="btn_Record_Production" layoutX="42.0" layoutY="27.0" mnemonicParsing="false" onAction="#Record_Production" text="Record Production" />
+                  <ComboBox fx:id="chooseQuant" layoutX="433.0" layoutY="55.0" prefWidth="150.0" />
+                  <Button fx:id="btnRecordProduction" layoutX="42.0" layoutY="27.0" mnemonicParsing="false" onAction="#recordProduction" text="Record Production" />
                </children></AnchorPane>
       </content>
     </Tab>
@@ -70,7 +70,7 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <TextArea fx:id="Prod_log" layoutX="26.0" layoutY="25.0" prefHeight="200.0" prefWidth="200.0" />
+                  <TextArea fx:id="prodLog" layoutX="26.0" layoutY="25.0" prefHeight="200.0" prefWidth="200.0" />
                </children>
             </AnchorPane>
         </content>

@@ -2,6 +2,7 @@ package sample;
 
 
 /**
+ * MoviePlayer extends Product implements MultimediaControl.
  * @author Kevin
  */
 public class MoviePlayer extends Product implements MultimediaControl {
@@ -10,6 +11,7 @@ public class MoviePlayer extends Product implements MultimediaControl {
   private MonitorType monitorType;
 
   /**
+   * MoviePlayer class.
    * @param name         pass String
    * @param manufacturer pass String
    * @param screen       send screen
@@ -40,12 +42,13 @@ public class MoviePlayer extends Product implements MultimediaControl {
   }
 
   /**
+   * toString.
    * @return string toString
    */
   @Override
   public String toString() {
     return String
-        .format("%s\nScreen: %s\nMonitorType: %s", super.toString(), screen,
+        .format("%s%nScreen: %s%nMonitorType: %s", super.toString(), screen,
             monitorType);
   }
 }
