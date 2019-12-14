@@ -1,6 +1,11 @@
+![new york](https://user-images.githubusercontent.com/43714418/70740688-ae914300-1ce7-11ea-85ac-839abda0da08.jpg)
+
+
+
+
 # GUI_Project
 GUI Project
-Kevin Kenny 
+ Author Kevin Kenny 
 
 Week 1
 
@@ -155,3 +160,81 @@ Show all Products in the Produce tab ListView.
 
 Use the selected item from the ListView as the item used to record production.
 Show the production log in the Production Log tab TextArea. 
+
+
+Sprint 3
+
+Week 12 Lambda Expressions
+
+Issue 7 - Compare Products and Full Database Integration
+
+Make sure the H2 driver jar file (usually located in Program Files (x86) H2 bin) is copied into your res folder and that location is set in the IntelliJ Project Structure (Modules -> Dependencies).  
+
+Controller initialize method should do things that you want to happen once when the program starts:
+
+define the ObservableList (it can be declared at class level)
+call setupProductLineTable 
+associate the ObservableList with the Product Line ListView 
+call loadProductList
+call loadProductionLog
+Add Product button should:
+
+insert added product into database
+call loadProductList
+
+loadProductList method should:
+1.Create Product objects from the Product database table and add them to the productLine ObservableList (which will automatically update the Product Line ListView).
+2.Sample code to read from a database, create an object, and save to list
+
+Record Production button should:
+1.Get the selected product from the Product Line ListView and the quantity from the comboBox. 
+2.Create an ArrayList of ProductionRecord objects named productionRun. 
+3.Send the productionRun to an addToProductionDB method. (Tip: use a TimeStamp object for the date)
+4.call loadProductionLog
+5.call showProduction
+
+showProduction should:
+1.populate the TextArea on the Production Log tab with the information from the productionLog, replacing the productId with the product name, with one line for each product produced
+
+The addToProductionDB method should:
+1.Loop through the productionRun, inserting productionRecord object information into the ProductionRecord database table.
+
+The loadProductionLog method should:
+1.Create ProductionRecord objects from the records in the ProductionRecord database table. 
+2.Populate the productionLog ArrayList
+3.call showProduction
+
+Findbugs
+-FindBugs should find no bugs.
+
+Google Style
+  Naming
+-When specified, name everything exactly as instructed.
+-When not specified, give descriptive names using proper naming conventions.
+  CheckStyle
+-Use the CheckStyle plugin. File -> Settings -> Plugins -> type checkstyle in search box -> click Search in repositories.
+-Once installed, you should see CheckStyle at the bottom left of the window. Click it. Choose Google Checks in the dropdown box for Rules. Click the button to Check Project.
+  Blank Lines
+-Use single blank lines between methods and where it improves readability. No multiple consecutive blank lines. 
+
+Documentation
+
+Comments
+-Comments in code that describe non-obvious code.
+-Cite any resources used such as web sites, classmates, etc.
+Javadoc Comments
+-Write Javadoc style comments for all classes and methods including:
+
+Description 
+-A required component of every doc.
+-The first sentence (end in a period). It should be a summary sentence, concise but complete. 
+-Optionally, include an additional <p> tag and a longer description. 
+Block tags: 
+-At a minimum, include the following:
+-For a class
+ @author - your name
+For a method 
+ @param - a description of the parameter variable, if there is one
+ @return - a description of the returned value, if the method returns something
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/43714418/70740965-56a70c00-1ce8-11ea-92cc-6c4bbec1777f.gif)
