@@ -181,28 +181,28 @@ Add Product button should:
 
 insert added product into database
 call loadProductList
+
 loadProductList method should:
+1.Create Product objects from the Product database table and add them to the productLine ObservableList (which will automatically update the Product Line ListView).
+2.Sample code to read from a database, create an object, and save to list
 
-Create Product objects from the Product database table and add them to the productLine ObservableList (which will automatically update the Product Line ListView).
-Sample code to read from a database, create an object, and save to list
- Record Production button should:
+Record Production button should:
+1.Get the selected product from the Product Line ListView and the quantity from the comboBox. 
+2.Create an ArrayList of ProductionRecord objects named productionRun. 
+3.Send the productionRun to an addToProductionDB method. (Tip: use a TimeStamp object for the date)
+4.call loadProductionLog
+5.call showProduction
 
-Get the selected product from the Product Line ListView and the quantity from the comboBox. 
-Create an ArrayList of ProductionRecord objects named productionRun. 
-Send the productionRun to an addToProductionDB method. (Tip: use a TimeStamp object for the date)
-call loadProductionLog
-call showProduction
 showProduction should:
+1.populate the TextArea on the Production Log tab with the information from the productionLog, replacing the productId with the product name, with one line for each product produced
 
-populate the TextArea on the Production Log tab with the information from the productionLog, replacing the productId with the product name, with one line for each product produced
 The addToProductionDB method should:
+1.Loop through the productionRun, inserting productionRecord object information into the ProductionRecord database table.
 
-Loop through the productionRun, inserting productionRecord object information into the ProductionRecord database table.
 The loadProductionLog method should:
-
-Create ProductionRecord objects from the records in the ProductionRecord database table. 
-Populate the productionLog ArrayList
-call showProduction
+1.Create ProductionRecord objects from the records in the ProductionRecord database table. 
+2.Populate the productionLog ArrayList
+3.call showProduction
 
 Findbugs
 -FindBugs should find no bugs.
