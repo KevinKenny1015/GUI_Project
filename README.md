@@ -5,7 +5,7 @@
 
 # GUI_Project
 GUI Project
-Kevin Kenny 
+ Author Kevin Kenny 
 
 Week 1
 
