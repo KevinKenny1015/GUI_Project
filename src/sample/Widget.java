@@ -1,7 +1,7 @@
 package sample;
 
 /**
- * Widget extends Product.
+ * Widget extends Product class.
  */
 class Widget extends Product {
 

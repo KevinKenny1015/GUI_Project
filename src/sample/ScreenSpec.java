@@ -8,7 +8,7 @@ package sample;
 public interface ScreenSpec {
 
   /**
-   * Method Call getter for resolution.
+   * Method Call getter for the resolution.
    *
    * @return string
    */
